@@ -13,6 +13,8 @@ const inputString = `
 const regexPatterns = {
   email: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g,
   url: /https?:\/\/[^\s]+/g,
+  phone: /\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/g,
+  creditCard: /\b\d{4}[- ]?\d{4}[- ]?\d{4}[- ]?\d{4}\b/g,
 };
 
 // Function to extract data using Regex
@@ -24,3 +26,8 @@ function extractData(input, regex) {
 // Extract and display results
 console.log("Email Addresses:", extractData(inputString, regexPatterns.email));
 console.log("URLs:", extractData(inputString, regexPatterns.url));
+console.log("Phone Numbers:", extractData(inputString, regexPatterns.phone));
+console.log(
+  "Credit Card Numbers:",
+  extractData(inputString, regexPatterns.creditCard)
+);
