@@ -11,8 +11,9 @@ const inputString = `
 
 // Regex patterns for extraction
 const regexPatterns = {
-    email: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g
-}
+  email: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g,
+  url: /https?:\/\/[^\s]+/g,
+};
 
 // Function to extract data using Regex
 function extractData(input, regex) {
@@ -22,3 +23,4 @@ function extractData(input, regex) {
 
 // Extract and display results
 console.log("Email Addresses:", extractData(inputString, regexPatterns.email));
+console.log("URLs:", extractData(inputString, regexPatterns.url));
