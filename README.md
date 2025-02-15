@@ -158,22 +158,6 @@ alu_regex-data-extraction-hycienti/
 
 ---
 
-## Testing and Edge Cases
-
-### Test Cases:
-1. **Valid Inputs**:
-   - Ensure the script extracts all valid data types correctly.
-2. **Invalid Inputs**:
-   - Test with malformed emails, invalid URLs, or incomplete phone numbers to ensure the Regex handles edge cases gracefully.
-
-### Example Edge Cases:
-- Emails: `user@.com`, `user@com`
-- URLs: `http://`, `https://example`
-- Phone Numbers: `1234567890`, `123-456-789`
-- Credit Cards: `1234 5678 9012`, `1234-5678-9012-345`
-
----
-
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
