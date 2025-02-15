@@ -17,6 +17,9 @@ const regexPatterns = {
   creditCard: /\b\d{4}[- ]?\d{4}[- ]?\d{4}[- ]?\d{4}\b/g,
   html: /<[^>]+>/g,
   hashtag: /#\w+/g,
+  currency: /\$\d{1,3}(,\d{3})*(\.\d{2})?/g,
+  time24: /\b(?:[01]?\d|2[0-3]):[0-5]\d\b/g,
+  time12: /\b(?:1[0-2]|0?[1-9]):[0-5]\d\s?(?:AM|PM)\b/gi,
 };
 
 // Function to extract data using Regex
@@ -35,3 +38,9 @@ console.log(
 );
 console.log("HTML Tags:", extractData(inputString, regexPatterns.html));
 console.log("Hashtags:", extractData(inputString, regexPatterns.hashtag));
+console.log(
+  "Currency Amounts:",
+  extractData(inputString, regexPatterns.currency)
+);
+console.log("24-Hour Time:", extractData(inputString, regexPatterns.time24));
+console.log("12-Hour Time:", extractData(inputString, regexPatterns.time12));
