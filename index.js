@@ -15,6 +15,8 @@ const regexPatterns = {
   url: /https?:\/\/[^\s]+/g,
   phone: /\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/g,
   creditCard: /\b\d{4}[- ]?\d{4}[- ]?\d{4}[- ]?\d{4}\b/g,
+  html: /<[^>]+>/g,
+  hashtag: /#\w+/g,
 };
 
 // Function to extract data using Regex
@@ -31,3 +33,5 @@ console.log(
   "Credit Card Numbers:",
   extractData(inputString, regexPatterns.creditCard)
 );
+console.log("HTML Tags:", extractData(inputString, regexPatterns.html));
+console.log("Hashtags:", extractData(inputString, regexPatterns.hashtag));
