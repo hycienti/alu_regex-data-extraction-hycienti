@@ -8,3 +8,17 @@ const inputString = `
   Prices start at $19.99 and go up to $1,234.56.
   The meeting is at 14:30 or 2:30 PM.
 `;
+
+// Regex patterns for extraction
+const regexPatterns = {
+    email: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g
+}
+
+// Function to extract data using Regex
+function extractData(input, regex) {
+  const matches = input.match(regex);
+  return matches || [];
+}
+
+// Extract and display results
+console.log("Email Addresses:", extractData(inputString, regexPatterns.email));
