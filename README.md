@@ -92,7 +92,7 @@ Here’s a breakdown of the Regex patterns used in the code:
    ```
 2. **Navigate to the Project Directory**:
    ```bash
-   cd alu_regex-data-extraction-yourusername
+   cd alu_regex-data-extraction-hycienti
    ```
 3. **Run the Script**:
    ```bash
