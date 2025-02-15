@@ -88,7 +88,7 @@ Here’s a breakdown of the Regex patterns used in the code:
 ### Steps to Run:
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/alu_regex-data-extraction-yourusername.git
+   git clone https://github.com/your-username/alu_regex-data-extraction-hycienti.git
    ```
 2. **Navigate to the Project Directory**:
    ```bash
@@ -151,10 +151,9 @@ Currency Amounts: [ '$19.99', '$1,234.56' ]
 ## Repository Structure
 
 ```
-alu_regex-data-extraction-yourusername/
+alu_regex-data-extraction-hycienti/
 ├── index.js               # Main JavaScript file for data extraction
 ├── README.md              # Project documentation
-├── test-input.txt         # Sample input file for testing
 ```
 
 ---
