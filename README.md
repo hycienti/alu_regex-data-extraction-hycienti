@@ -158,10 +158,4 @@ alu_regex-data-extraction-hycienti/
 
 ---
 
-## License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
----
-
 Happy Coding! 🚀
